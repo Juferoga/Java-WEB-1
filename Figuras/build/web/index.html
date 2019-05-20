@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <title>Gimnasio el gimnasio</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width"> 
+    </head>
+    <body>
+        
+        <nav class="navbar navbar-dark bg-dark">
+            <center><a class="navbar-brand" href="#">EL GIMNASIO</a></center>
+        </nav>
+        <br>
+        <br>
+      <!--<center>-->
+      <div class="col-auto text-center">
+      <form name="frmGym" action="GymServlet" method="get" class="col-md-4">
+
+        <!-- DATOS PERSONALES -->
+    <!-- NOMBRE  -->
+        <div class="form-group" id="Div_Nombre">
+          <label for="Nombre">Nombre Completo:</label>
+          <input class="form-control" type="text" name="Nombre" placeholder="Escribe tu Nombre" required>
+        </div><hr>
+    <!-- Cedula/Documento  -->  
+        <div class="form-group" id="Div_Cedula">
+        <label for="cc">Cedula:</label>
+        <input class="form-control" id="cc" type="text" name="cc" placeholder="Cedula" required>
+        </div><hr>
+    <!-- Telefono  -->
+        <div class="form-group" id="Div_Telefono">
+          <label for="tel">Telefono:</label>
+          <input class="form-control" id="tel" type="text" name="tel" placeholder="Telefono" required>
+        </div><hr>
+    <!-- Sex  -->
+        <div class="form-group" id="Div_Sexo">
+            <label>Sexo:</label><br>
+        <label>Masculino<input class="form-control" type="radio" name="sexo" value="Masculino"></label>
+        <label>Femenino<input class="form-control" type="radio" name="sexo" value="Femenino" ></label>
+        </div><hr>
+    <!-- Edad  -->       
+        <div class="form-group" id="Div_Edad">
+          <label for="Edad">Edad :</label>
+          <input class="form-control" type="text" name="Edad" placeholder="Digita tu edad" required >
+        </div><hr>
+    <!-- Peso  -->
+        <div class="form-group" id="Div_Peso">
+          <label for="Peso">Peso :</label>
+          <input class="form-control" type="text" name="Peso" placeholder="Digita tu peso" required>
+        </div><hr>
+    <!-- Altura  -->
+        <div class="form-group" id="Div_Altura">
+          <label for="Talla">Cuanto mides? (Escribe con punto ej. 1.78)</label>
+          <input class="form-control" type="text" name="Talla" placeholder="Digita tu Altura" required>
+        </div><hr>
+    <!-- Nivel del entrenamiento  -->
+        <div class="form-group" id="Div_Intension">
+          <label>Intesion de Entrenamiento:</label><br>
+          <label>Baja<input class="form-control" type="radio" name="Intesion" value="B"></label>
+          <label>Media<input class="form-control" type="radio" name="Intesion" value="M"></label>
+          <label>Alta<input class="form-control" type="radio" name="Intesion" value="A" ></label>
+        </div><hr>
+    <!-- Caso Especial  -->
+        <div class="form-group" id="Div_SpecialCase">
+          <label>Rehabilitacion:</label><br>
+          <label>SI<input class="form-control" type="radio" name="Rehab" value="SI"></label>
+          <label>NO<input class="form-control" type="radio" name="Rehab" value="NO"></label>
+        </div><hr>
+        
+    <center><button type="submit" class="btn btn-outline-dark">Enviar Datos</button></center>
+      </form>
+      </div>
+      
+      <!--</center>-->
+    </body>
+</html>
